@@ -54,6 +54,7 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^7.2.6",
     "baron": "^3.0.3",
     "bundle-loader": "^0.5.6",

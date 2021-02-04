@@ -1,0 +1,25 @@
+<% const ItemProduct = [
+    {},{},{},{},{},{},{},{},
+] %>
+<section class="section section--products">
+    <div class="container d-flex justify-center text--center">
+        <h2 class="section--title">Клубничные букеты</h2></div>
+    <div class="container">
+        <div class="grid grid--products grid--xl-4 grid--md-2 grid--sm-2">
+
+            <% ItemProduct.forEach(function (item) { %>
+                <%- require("./ItemProduct.ejs")(item) %>
+            <% }) %>
+
+        </div>
+    </div>
+    <div class="container d-flex justify-center">
+        <a href="/catalog/klubnychnie-buketi" class="button--transformer section--button">
+            Показать все
+            <span class="button--transformer-border button--transformer-border_top"></span>
+            <span class="button--transformer-border button--transformer-border_bottom"></span>
+            <span class="button--transformer-border button--transformer-border_left"></span>
+            <span class="button--transformer-border button--transformer-border_right"></span>
+        </a>
+    </div>
+</section>

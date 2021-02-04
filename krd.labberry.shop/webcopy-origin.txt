@@ -662,27 +662,27 @@ Uri: https://krd.labberry.shop/files/1/myghskie/2a.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\files\1\myghskie\2a.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_1.jpg
+Uri: https://krd.labberry.shop/images/content/slide_1.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_1.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_2.jpg
+Uri: https://krd.labberry.shop/images/content/slide_2.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_2.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_3.jpg
+Uri: https://krd.labberry.shop/images/content/slide_3.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_3.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_4.jpg
+Uri: https://krd.labberry.shop/images/content/slide_4.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_4.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_5.jpg
+Uri: https://krd.labberry.shop/images/content/slide_5.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_5.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/slide_6.jpg
+Uri: https://krd.labberry.shop/images/content/slide_6.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\slide_6.jpg
 Content Type: image/jpeg
 
@@ -774,7 +774,7 @@ Uri: https://krd.labberry.shop/files/1/1000px /IMG-68.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\files\1\1000px \IMG-68.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about/about_main_img.jpg
+Uri: https://krd.labberry.shop/images/content/about_main_img.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about\about_main_img.jpg
 Content Type: image/jpeg
 
@@ -782,15 +782,15 @@ Uri: https://krd.labberry.shop/_nuxt/961164b6713a730eaffd.js
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\_nuxt\961164b6713a730eaffd.js
 Content Type: application/javascript
 
-Uri: https://krd.labberry.shop/images/about-img-1.jpg
+Uri: https://krd.labberry.shop/images/content-img-1.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about-img-1.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about-img-3.jpg
+Uri: https://krd.labberry.shop/images/content-img-3.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about-img-3.jpg
 Content Type: image/jpeg
 
-Uri: https://krd.labberry.shop/images/about-img-2.jpg
+Uri: https://krd.labberry.shop/images/content-img-2.jpg
 File Name: C:\Downloaded Web Sites\krd.labberry.shop\images\about-img-2.jpg
 Content Type: image/jpeg
 

@@ -1,0 +1,76 @@
+<% const SectionPluses = [
+    {
+        'title': "Отборная клубника",
+        'subtitle':
+                "Мы поставляем клубнику сорта «Солнечный Альбион» из Армении. Ягода экологически чистая и вкусная!",
+        'image': "slide_1.jpg"
+    },
+    {
+        'title': "Контроль качества",
+        'subtitle':
+                "Каждый букет проходит проверку после сборки. Вы убедитесь в этом сами - мы пришлем фотографию композиции перед доставкой.",
+        'image': "slide_2.jpg"
+    },
+    {
+        'title': "Соблюдение стандартов",
+        'subtitle':
+                "Кондитеры работают в перчатках. А ягода отделяется от цветов специальной прозрачной пленкой. Безопасность на высшем уровне.",
+        'image': "slide_3.jpg"
+    },
+    {
+        'title': "Шоколад из сердца Европы",
+        'subtitle':
+                "Мы используем бельгийский шоколад высшего качества - Callebaut. Это лучший продукт на рынке с содержанием не менее 25,9% какао.",
+        'image': "slide_4.jpg"
+    },
+    {
+        'title': "Безупречная сборка",
+        'subtitle':
+                "Наши флористы прошли тщательную подготовку и обучение перед вступлением на должность. Ваш букет получится идеальным!",
+        'image': "slide_5.jpg"
+    },
+    {
+        'title': "Срок годности",
+        'subtitle':
+                "Клубника в шоколаде - 12 часов. Клубника без шоколада - 24 часа. Ягоду необходимо хранить в холодильнике при температуре +4...+7.",
+        'image': "slide_6.jpg"
+    }
+] %>
+
+<section class="section section--pluses">
+    <div class="container">
+        <h2 class="section--title text--center">Почему у нас лучшие клубничные букеты</h2></div>
+    <div class="section--slider-wrapper">
+        <div class="section--pluses-background-text section--pluses-background-text_top"></div>
+        <div class="section--pluses-background-text section--pluses-background-text_bottom"></div>
+        <div class="section--slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <% SectionPluses.forEach(function (item) { %>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item--image"><img src="/images/content/<%= item.image %>" alt=""></div>
+                                <div class="item--content">
+                                    <h3 class="item--title text_light"><%= item.title %></h3>
+                                    <p class="text_light"><%= item.subtitle %></p>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+
+                </div>
+                <div class="swiper-button-prev swiper-button-nav">
+                    <svg width="13" height="38" viewBox="0 0 13 38" fill="none">
+                        <path d="M12 1L1 19.5L12 37" stroke="#818181" stroke-width="1.5"></path>
+                    </svg>
+                </div>
+                <div class="swiper-button-next swiper-button-nav">
+                    <svg width="13" height="38" viewBox="0 0 13 38" fill="none">
+                        <path d="M1 1L12 19.5L1 37" stroke="#D7607F" stroke-width="1.5"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

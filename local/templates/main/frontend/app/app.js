@@ -34,6 +34,9 @@ import Debounce from'./js/debounce'
 // import Tabs from './js/tabs'
 // import Media from './js/media'
 
+/* Labbery */
+import Aos from "./js/utils/aos";
+
 // Load styles
 import './styles/app.js';
 
@@ -72,6 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // App.Scrollbar = new Scrollbar();
     // App.Tabs = new Tabs();
     // App.Media = new Media();
+
+
+    /* Labbery */
+    App.Aos = new Aos();
 
     $('[data-inputmask]').each(function () {
         IMask($(this)[0], {mask: "0 (000) 000-0000"});
