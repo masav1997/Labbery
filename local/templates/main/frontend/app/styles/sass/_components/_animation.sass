@@ -1,0 +1,78 @@
+@keyframes background_left
+  0%
+    background-position-x: 0
+  100%
+    background-position-x: -10000px
+
+@keyframes background_right
+  0%
+    background-position-x: 0
+  100%
+    background-position-x: 10000px
+
+@keyframes fade-up
+  0%
+    opacity: 0
+    transform: translateY(20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+.section
+  &--pluses-background-text
+    &_top
+      animation: background_left 300s linear
+    &_bottom
+      animation: background_right 300s linear
+  &--pluses
+    .swiper-slide
+      .text_light
+        opacity: 0
+        transform: translateY(20px)
+        transition: opacity 1.5s, transform 1s
+        transition-timing-function: $cubic
+      .item--title
+        transition-delay: 0.5s
+      p.text_light
+        transition-delay: 1s
+    .swiper-slide-active
+      .item--title, .text_light
+        opacity: 1
+        transform: translateY(0)
+  &--full-screen
+    .tabs--item_active
+      .title
+        animation: fade-up 1s $cubic
+      .subtitle
+        animation: fade-up 3s $cubic
+      .button
+        animation: fade-up 5s $cubic
+  &--popular
+    opacity: 0
+    transform: translateY(30px)
+    transition: opacity 1s, transform 1s
+    transition-timing-function: $cubic
+  &--popular.aos-animate
+    opacity: 1
+    transform: translateY(0)
+#section
+	&--info
+		background-image: url('../../static/images/section-pluses-text.svg')
+		background-repeat: repeat-x
+		background-position-y: 95%
+		animation: background_left 300s linear
+	&--checkout
+		background-image: url('../../static/images/checkout-text.svg')
+		background-repeat: repeat-x
+		background-position-y: 85%
+		animation: background_left 300s linear
+		padding-bottom: 400px
+
+.page
+  &--404
+    .section--full-screen
+      animation: background_left 300s linear
+  &--about
+    .section--full-screen
+      .title
+        animation: fade-up 3s $cubic

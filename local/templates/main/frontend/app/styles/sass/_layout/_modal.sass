@@ -1,0 +1,45 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: z(modal)
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &--header
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    height: 50px
+  &--content
+    width: 100%
+    height: 100%
+    flex: 1
+  &--footer
+    position: absolute
+    width: 100%
+    bottom: 0
+    left: 0
+    height: 50px
+  &--icon_close
+    width: 40px
+    height: 40px
+    background-color: red
+
+  &--dop-products
+    background-color: $light-color
+    z-index: z(modal-dop-products)
+    &-inner
+      padding-top: 140px
+      padding-bottom: 80px
+    .modal--header
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 200px
+    .modal--content
+      overflow-y: auto

@@ -1,0 +1,27 @@
+.mobile-slider
+  &--inner
+    height: 135px
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    padding-right: 20px
+    padding-left: 20px
+    transition: all 0.5s linear
+    transform: translateX(-50px)
+    border: 1px solid #e1e1e1
+  &--text
+    font-size: 22px
+    line-height: 28px
+    color: #ffffff
+
+.mobile-slider
+  .swiper-slide-active
+    transition: transform 0.5s linear
+    .mobile-slider--inner
+      width: 76%
+      transform: translateX(15px)
+  .swiper-slide-active ~ .swiper-slide
+    .mobile-slider--inner
+      transform: translateX(-15px)

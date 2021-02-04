@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$default-font: 'CeraPro', sans-serif
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: #4e4e4e !default
+
+
+/// Main brand color
+/// @type Color
+$brand-color: #d7607f !default
+
+$light-color: #fff !default
+$light-color-2: #e1e1e1 !default
+$light-color-3: #818181 !default
+$light-color-4: #d8d8d8 !default
+$dark-color: #323232 !default
+$border-radius: 0 !default
+
+$gap: 20px
+
+
+
+/// Z-indexes map, gathering all Z layers of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Layer’s name
+/// @prop {Number} value - Z value mapped to the key
+$z-indexes: ('notification': 9000, 'preloader': 9999, 'modal': 5000, 'toolbar': 4000, 'modal-dop-products': 3500, 'menu': 3000, 'city-modal': 2000, 'content': 1000, 'overlay': 100, 'media-absolute': 50, 'default': 1, 'below': -1,)
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1200px !default
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ('xs': 374px, 'sm': 480px, 'md': 768px, 'lg': 992px, 'xl': 1240px) !default
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default
+
+
+$cubic: cubic-bezier(.35,0,0,1.01)

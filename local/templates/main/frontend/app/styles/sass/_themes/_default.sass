@@ -1,0 +1,287 @@
+body
+  color: $text-color
+
+.link
+  color: $dark-color
+  +on-event
+    color: $brand-color
+  &-active
+    color: $brand-color
+  &::after
+    background-color: $brand-color
+  &--icon
+    color: $dark-color
+    border-color: $light-color-3
+    +on-event
+      background-color: $brand-color
+      border-color: $brand-color
+      color: $light-color
+      path
+        fill: $light-color
+    &-active
+      background-color: $light-color-2
+      border-color: $light-color-2
+      color: $light-color
+.nuxt-link-exact-active
+  color: $brand-color
+.nuxt-link-exact-active.link--icon
+  background-color: $brand-color
+  color: $light-color
+  border-color: $brand-color
+  path
+    fill: $light-color
+
+.toolbar
+  background-color: $light-color
+  &--list-city-link
+    &:hover
+      path
+        stroke: $brand-color
+  &--cart-notify
+    .link
+      color: $brand-color
+      &--icon
+        background-color: $brand-color
+        border-color: $brand-color
+        color: $light-color
+        transform: scale(1.2)
+        path
+          fill: $light-color
+
+
+.hamburger
+  &::after, &::before
+    background-color: $dark-color
+
+.button
+  border-color: $text-color
+  color: $text-color
+  &::before
+    background-color: $text-color
+  +on-event
+    color: $light-color
+  &--transformer
+    color: $dark-color
+    &::after, &::before
+      background-color: $light-color-2
+    &-border
+      background-color: $text-color
+
+.button_light
+  border-color: $light-color
+  color: $light-color
+  &::before
+    background-color: $text-color
+
+.button_brand
+  border-color: $brand-color
+  color: $light-color
+  &::before
+    background-color: $brand-color
+  +on-event
+    color: $brand-color
+    border-color: $brand-color
+    &::before
+      background-color: transparent
+
+.footer
+  border-color: $light-color-2
+
+.section
+  &--title
+    color: $light-color-3
+  &--block-divider
+    background-color: $light-color-2
+  &--nav
+    &-link
+      color: $text-color
+      border-bottom-color: $light-color-2
+      +on-event
+        color: $brand-color
+        border-bottom-color: $brand-color
+.section--nav-link.nuxt-link-exact-active
+  color: $brand-color
+  border-bottom-color: $brand-color
+
+.item
+  &--product
+    &-wrapper_inner
+      +media(lg)
+        border-color: $light-color-2
+    &-title
+      color: $dark-color
+    &-price
+      color: $dark-color
+    &-size
+      &_active
+        background-color: $light-color-2
+        color: $light-color
+        border-color: $light-color-2
+    &:hover
+      .item--product-wrapper_inner
+        border-color: $light-color-2
+
+.title
+  color: $text-color
+  &_light
+    color: $light-color
+.subtitle
+  color: $text-color
+  &_light
+    color: $light-color
+
+.tabs
+  &--navs
+    border-color: $light-color-2
+  &--nav
+    border-color: $light-color-2
+    +on-event
+      color: $brand-color
+    &_active
+      color: $brand-color
+
+.filter
+  &--item
+    &::after
+      background-color: $light-color-2
+  &--delimetr
+    background-color: $light-color-2
+
+.vue-slider
+  &-dot-handle
+    background-color: $brand-color!important
+    box-shadow: none!important
+  &-process
+    background-color: $brand-color!important
+  &-dot-tooltip-inner
+    background-color: $brand-color!important
+    border-color: $brand-color!important
+
+.swiper
+  &-button-nav
+    path
+      stroke: #c4c4c4
+    &:hover
+      path
+        stroke: $brand-color
+  &-pagination-bullet
+    background-color: $light-color-2!important
+  &-pagination-bullet-active
+    background-color: $brand-color!important
+
+.cart
+  border-color: $light-color-3
+  &--items
+    border-bottom-color: $light-color-2
+  &--footer-summary
+    color: $brand-color
+  &--item-title
+    color: $text-color
+  &--minus
+    border-right-color: $light-color-3
+  &--plus
+    border-left-color: $light-color-3
+  &--item-quantity
+    color: $brand-color
+  .operator
+    color: $brand-color
+
+.input
+  border-color: $light-color-3
+  &:disabled
+    color: $light-color-3
+    background-color: rgba($light-color-2, 0.7)
+    border-color: rgba($light-color-2, 0.7)
+.select
+  border-color: $light-color-3
+
+.form
+  &--card
+    border-color: $light-color-3
+  &--label
+    color: $brand-color
+
+.mx-table
+  color: $text-color
+.mx-btn
+  color: $text-color!important
+.mx-input
+  border-color: $light-color-3!important
+.mx-calendar-content .cell:hover
+  background-color: $brand-color!important
+  color: $light-color!important
+.mx-datepicker-popup
+  border-color: $light-color-3!important
+.cell.active
+  background-color: $brand-color!important
+  color: $light-color!important
+.mx-time-item
+  color: $text-color!important
+.mx-time-item.active
+  color: $light-color!important
+  background-color: $brand-color!important
+.mx-time-item:hover
+  color: $light-color!important
+  background-color: $brand-color!important
+
+.checkbox span
+  color: $text-color
+
+.radio span
+  color: $text-color
+
+.radio label
+  border-color: $text-color
+
+.checkbox label
+  border-color: $text-color
+
+.radio :checked ~ label, .checkbox :checked ~ label
+  border-color: $brand-color
+
+.radio :checked ~ label::before, .checkbox :checked ~ label::before
+  background-color: $brand-color
+
+.radio :checked ~ span, .checkbox :checked ~ span
+  color: $brand-color
+
+
+.menu
+  background-color: $light-color
+  &--link
+    color: $light-color-3
+    &:hover
+      color: $brand-color
+    &.nuxt-link-exact-active
+      color: $brand-color
+
+.city--list
+  background-color: $light-color
+  &-delimetr
+    background-color: $light-color-2
+
+.city--link-top-inner
+  color: $text-color
+  &:hover
+    color: $brand-color
+
+.callback--modal
+  background-color: $light-color
+
+.gift--modal
+  background-color: rgba($light-color, 0.7)
+  &-inner
+    background-color: $light-color
+    border-color: $light-color-2
+.text
+  &_light
+    color: $light-color
+
+.close
+  &::after, &::before
+    background-color: $brand-color
+
+.product-gallery
+  .swiper-button-nav
+    path
+      stroke: $brand-color

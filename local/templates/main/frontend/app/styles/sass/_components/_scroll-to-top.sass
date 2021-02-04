@@ -1,0 +1,24 @@
+.scroll-to-top
+  position: fixed
+  bottom: 30px
+  right: 30px
+  cursor: pointer
+  opacity: 0
+  pointer-events: fill
+  z-index: z(modal)
+  transition: opacity 0.25s $cubic
+  +media(sm)
+    display: none
+  &--icon
+    position: absolute
+    top: -70px
+    left: 47%
+    transform: translateX(-50%)
+  &--text
+    font-size: 12px
+    text-transform: lowercase
+    color: $light-color-4
+    transform: rotate(90deg)
+  &_visible
+    opacity: 1
+    pointer-events: auto

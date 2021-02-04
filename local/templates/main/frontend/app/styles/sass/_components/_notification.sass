@@ -1,0 +1,23 @@
+.notification
+  position: fixed
+  top: 20px
+  right: 20px
+  z-index: z(notification)
+  padding: 20px
+  border: 1px solid
+  max-width: 280px
+  background-color: $light-color
+
+  &--success
+    border-color: green
+  &--error
+    border-color: red
+  &--warning
+    border-color: yellow
+
+
+.notification-enter-active, .notification-leave-active
+  transition: opacity .5s
+
+.notification-enter, .notification-leave-to
+  opacity: 0

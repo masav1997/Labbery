@@ -1,0 +1,76 @@
+.grid
+	display: grid
+	grid-gap: 20px
+	width: 100%
+	&--products
+		grid-gap: 0
+		+media(sm)
+			grid-gap: 20px
+	&--order
+		grid-gap: 90px
+		+media(lg)
+			grid-gap: 40px
+		&-form
+			grid-gap: 90px
+			+media(md)
+				grid-gap: 40px
+	&--xl
+		&-1
+			grid-template-columns: repeat(1, 1fr)
+		&-2
+			grid-template-columns: repeat(2, 1fr)
+		&-3
+			grid-template-columns: repeat(3, 1fr)
+		&-4
+			grid-template-columns: repeat(4, 1fr)
+		&-5
+			grid-template-columns: repeat(5, 1fr)
+		&-6
+			grid-template-columns: repeat(6, 1fr)
+
++media(lg)
+	.grid
+		&--lg
+			&-1
+				grid-template-columns: repeat(1, 1fr)
+			&-2
+				grid-template-columns: repeat(2, 1fr)
+
++media(md)
+	.grid
+		&--md
+			&-1
+				grid-template-columns: repeat(1, 1fr)
+			&-2
+				grid-template-columns: repeat(2, 1fr)
+
++media(sm)
+	.grid
+		&--sm
+			&-1
+				grid-template-columns: repeat(1, 1fr)
+			&-2
+				grid-template-columns: repeat(2, 1fr)
+			&-hidden
+				display: none
+
++media(xs)
+	.grid
+		&--xs
+			&-hidden
+				display: none
+
+.d-flex
+	display: flex
+.justify-center
+	justify-content: center
+.align-center
+	align-items: center
+.align-start
+	align-items: flex-start
+.f-column
+	flex-direction: column
+.f-row
+	flex-direction: row
+.row-revers
+	flex-direction: row-reverse

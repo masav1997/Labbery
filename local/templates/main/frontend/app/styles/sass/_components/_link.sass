@@ -1,0 +1,72 @@
+%link
+	position: relative
+	font-size: 16px
+	line-height: 20px
+	transition: color 1s
+	transition-timing-function: cubic-bezier(.35,0,0,1.01)
+	white-space: nowrap
+	cursor: pointer
+	margin:
+		right: 20px
+		left: 20px
+	&::after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 0
+		height: 1px
+		transition: width 1s
+		transition-timing-function: cubic-bezier(.35,0,0,1.01)
+	+on-event
+		&::after
+			width: 100%
+	&--icon
+		width: 40px
+		height: 40px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 100%
+		border: 1px solid
+		font-size: 18px
+		line-height: 22px
+		text-transform: uppercase
+		transition: border-color 1s, background-color 1s, color 1s, transform 1s
+		transition-timing-function: cubic-bezier(.35,0,0,1.01)
+		cursor: pointer
+		+media(sm)
+			width: 30px
+			height: 30px
+			font-size: 16px
+		&-image
+			width: 20px
+			display: flex
+			align-items: center
+			justify-content: center
+		img, svg
+			width: 100%
+		path
+			transition: fill 1s
+			transition-timing-function: cubic-bezier(.35,0,0,1.01)
+	&-active
+		&::after
+			width: 100%
+
+.link
+	@extend %link
+	+media(sm)
+		font-size: 14px
+		margin:
+			right: 10px
+			left: 10px
+	&-active
+		@extend %link-active
+	&--icon
+		@extend %link--icon
+		&-image
+			@extend %link--icon-image
+
+.nuxt-link-exact-active
+	&::after
+		width: 100%

@@ -1,0 +1,53 @@
+.swiper
+  &-wrapper
+    transition: 1s!important
+    transition-timing-function: cubic-bezier(.35,0,0,1.01)!important
+  &-container
+    height: 100%
+  &-button-nav
+    position: absolute
+    background-image: none!important
+  &-button
+    &-prev, &-next
+      display: flex
+      align-items: center
+      justify-content: center
+      outline: none
+      width: 60px !important
+      height: 60px !important
+      background: transparent
+      border-radius: 50%
+      border: 1px solid #c4c4c4
+      outline: none
+      transition: border .5s
+      transition-timing-function: cubic-bezier(.35,0,0,1.01)
+      &:hover
+        border: 1px solid $brand-color
+      svg
+        height: 100%
+      path
+        transition: stroke 1s!important
+        transition-timing-function: cubic-bezier(.35,0,0,1.01)!important
+    &-prev
+      left: -50px!important
+    &-next
+      right: -50px!important
+
+  &-pagination
+    position: static!important
+    display: flex
+    align-items: center
+    margin-top: 40px
+    margin-bottom: 40px
+    +media(md)
+      margin-top: 20px
+      margin-bottom: 20px
+    &-bullet
+      height: 1px!important
+      flex: 1
+      transition: background-color 1s, opacity 1s!important
+      transition-timing-function: cubic-bezier(.35,0,0,1.01)!important
+      opacity: 1!important
+      margin:
+        right: 0!important
+        left: 0!important

@@ -1,0 +1,49 @@
+.radio, .checkbox
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+
+.radio input[type="radio"], .checkbox input[type="checkbox"]
+  display: none
+
+.radio label, .checkbox label
+  position: relative
+  display: inline-block
+  width: 20px
+  height: 20px
+  border: 1px solid
+  box-sizing: border-box
+  margin-right: 10px
+
+.radio label
+  border-radius: 100%
+
+.checkbox label
+  font-size: 14px
+
+.radio label::before, .checkbox label::before
+  content: ""
+  position: absolute
+  left: 50%
+  top: 50%
+  width: 15px
+  height: 15px
+  background-color: transparent
+  transform: translate(-50%, -50%)
+  transition: background-color 1s
+  transition-timing-function: $cubic
+  cursor: pointer
+
+.radio label::before
+  border-radius: 100%
+
+.radio span, .checkbox span
+  vertical-align: top
+  transition: color 1s
+
+
+.radio--group
+  display: flex
+  align-items: center
+  .radio
+    margin-right: 40px

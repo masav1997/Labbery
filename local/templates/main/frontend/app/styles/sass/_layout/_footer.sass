@@ -1,0 +1,105 @@
+.footer
+	@extend %base-layout
+	width: 100%
+	border-top: 1px solid
+	padding:
+		top: $gap * 2
+		bottom: $gap * 2
+	+media(sm)
+		padding:
+			top: 20px
+			bottom: 20px
+	&--wrapper
+		display: flex
+		+media(lg)
+			flex-direction: column
+		+media(md)
+			flex-direction: column-reverse
+	&--inner
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding-right: 90px
+		+media(lg)
+			padding-right: 0
+			margin-bottom: 30px
+		+media(md)
+			margin-top: 30px
+		+media(sm)
+			margin-top: 0
+	&--logo
+		width: 50px
+		margin-right: $gap
+		img
+			width: 100%
+	&--group
+		display: flex
+		width: 100%
+		align-items: center
+	&--item
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&-title
+			margin-top: 0
+			margin-bottom: 30px
+		&-link
+			margin-bottom: 25px
+			&:last-of-type
+				margin-bottom: 0
+			+media(md)
+				font-size: 14px
+	&--label
+		white-space: nowrap
+		margin-bottom: $gap
+		font-size: 16px
+		+media(sm)
+			font-size: 14px
+	&--link
+		&-active
+	&--socials
+		display: flex
+		align-items: center
+		margin-bottom: $gap
+		&-items
+			display: flex
+		.link--icon
+			margin:
+				right: 15px
+				left: 15px
+	.link
+		margin:
+			right: 0
+			left: 0
+
+	&--bottom
+		@extend %base-layout--actions
+		justify-content: flex-end
+		padding: $gap
+		margin-top: $gap / 2
+	&--button
+		@extend %base-layout--button
+		@include button-colorize($dark-color, $light-color, $dark-color, $dark-color, $dark-color, $light-color)
+	&--title
+		@extend %base-layout--title
+		font-size: 1.2em
+		margin: $gap / 2 0 $gap / 2 0
+		color: $dark-color
+	&--scroll-to-top
+		display: block
+		opacity: 1
+		position: absolute
+		display: none
+		+media(sm)
+			display: block
+
+.policy
+	font-size: 0.9em
+	&--link
+		@extend %link
+		@include link-colorize($dark-color, $dark-color)
+		&-active
+			@extend %link-active
+			@include link-colorize($dark-color, $dark-color)
+		font-size: 1em
+

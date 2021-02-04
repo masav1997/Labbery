@@ -1,0 +1,136 @@
+%button
+	font-size: 18px
+	font-family: $default-font!important
+	line-height: 22px
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	text-align: center
+	cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 50px
+	max-width: 260px
+	width: 100%
+	border: 1px solid
+	border-radius: $border-radius
+	transition: border-color 1s, color 1s, background-color 1s, opacity 1s
+	transition-timing-function: $cubic
+	outline: none
+	overflow: hidden
+	position: relative
+	padding: 0
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		transition: transform 1s, background-color 1s
+		transition-timing-function: $cubic
+		transform: scaleX(0)
+		transform-origin: 0 50%
+		z-index: 0
+	&--text
+		z-index: 1
+	+on-event
+		&::before
+			transform: scaleX(1)
+
+.button
+	@extend %button
+	+media(md)
+		font-size: 14px
+		height: 40px
+	&--text
+		@extend %button--text
+	&_brand
+		background-color: #fff
+		&::before
+			transform: scaleX(1)
+			width: 100%
+			transition: all 0.5s $cubic
+		&:hover
+			&::before
+				width: 0
+
+	&--transformer
+		font-size: 18px
+		line-height: 22px
+		text-transform: uppercase
+		cursor: pointer
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 50px
+		max-width: 200px
+		width: 100%
+		position: relative
+		transition: opacity 1s
+		transition-timing-function: $cubic
+		&-border
+			position: absolute
+			display: block
+			transition: transform 1s
+			transition-timing-function: $cubic
+			&_top, &_bottom
+				width: 100%
+				height: 1px
+				transform: scaleX(0)
+				left: 0
+				right: 0
+				margin:
+					left: auto
+					right: auto
+			&_top
+				top: 0
+			&_bottom
+				bottom: 0
+			&_left, &_right
+				height: 100%
+				width: 1px
+				transform: scaleY(0)
+				top: 0
+				bottom: 0
+				margin:
+					top: auto
+					bottom: auto
+			&_left
+				left: 0
+			&_right
+				right: 0
+		&::after, &::before
+			content: ''
+			position: absolute
+			width: 45px
+			height: 1px
+			transition: transform 1s
+			transition-timing-function: $cubic
+			top: 0
+			bottom: 0
+			margin:
+				top: auto
+				bottom: auto
+		&::after
+			right: -60px
+			transform-origin: 0 0
+		&::before
+			left: -60px
+			transform-origin: 100% 0
+		+media(sm)
+			&::before, &::after
+				width: 20px
+			&::before
+				left: -20px
+			&::after
+				right: -20px
+		+on-event
+			&::after, &::before
+				transform: scaleX(0)
+			.button--transformer-border
+				&_top, &_bottom
+					transform: scaleX(1)
+				&_left, &_right
+					transform: scaleY(1)

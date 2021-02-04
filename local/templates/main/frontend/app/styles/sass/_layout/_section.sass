@@ -1,0 +1,467 @@
+.section
+	@extend %base-layout
+	padding: $gap * 5 0
+	width: 100%
+	background-color: $light-color
+	position: relative
+	+media(md)
+		padding:
+			top: 80px
+			bottom: 80px
+	+media(sm)
+		padding:
+			top: 40px
+			bottom: 40px
+	&--item
+		width: 50%
+		display: flex
+		align-items: center
+		&-gap
+			padding: 0 $gap * 5
+		&-gap_right
+			padding-right: $gap * 5
+		&-gap_left
+			padding-left: $gap * 5
+	&--media
+		width: 100%
+		padding-top: 20px
+		height: auto
+	&--filter
+		padding:
+			top: 0
+			bottom: 0
+	&--title
+		@extend %base-layout--title
+		font-size: 36px
+		font-weight: 300
+		line-height: 45px
+		text-transform: uppercase
+		letter-spacing: 0.03em
+		margin:
+		top: 0
+		bottom: 40px
+		+media(md)
+			font-size: 30px
+		+media(sm)
+			font-size: 28px
+	&--text
+		margin-bottom: 30px
+	&--subtitle
+		margin: 0 0 $gap 0
+	&--blocks
+		grid-gap: 240px
+		+media(xl)
+			grid-gap: 140px
+		+media(md)
+			grid-gap: 100px
+	&--button
+		margin-top: 40px
+	&--block
+		&_info
+			+media(sm)
+				display: flex
+				flex-direction: column
+				// align-items: center
+				// text-align: center
+			.section--title
+				margin-bottom: 20px
+		.button
+			margin-bottom: 40px
+		.section--actions
+			.button
+				margin-bottom: 0
+				+media(sm)
+					max-width: unset
+		&-content
+			margin-bottom: 40px
+		&-divider
+			position: absolute
+			height: calc(100% - 100px)
+			width: 1px
+			bottom: 0
+			left: 0
+			right: 0
+			margin:
+				left: auto
+				right: auto
+			+media(md)
+				display: none
+
+	&--nav
+		width: 100%
+		display: flex
+		align-items: center
+		+media(sm)
+			flex-direction: column
+		&-link
+			flex: 1
+			text-align: center
+			font-size: 24px
+			padding:
+				bottom: 25px
+			border-bottom: 1px solid
+			transition: color 1s, border-bottom-color 1s
+			transition-timing-function: $cubic
+			+media(sm)
+				margin-bottom: 20px
+				padding-bottom: 10px
+	&--checkout-info
+		&-text
+			font-size: 16px
+			line-height: 20px
+			color: $light-color-3
+			margin-bottom: 0
+			margin-top: 35px
+			span
+				color: $brand-color
+	// Производные
+	&--full-screen
+		height: 100vh
+		display: flex
+		align-items: center
+		padding:
+			top: 0
+			bottom: 0
+		&-main
+			+media(sm)
+				display: none
+		.button_brand
+			position: relative
+			z-index: z(default)
+	&--background
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+	&--mobile-slider
+		padding-bottom: 0
+		display: none
+		padding-top: 20px
+		+media(sm)
+			display: block
+	&--first
+		padding:
+			top: 150px
+			bottom: 0
+		+media(sm)
+			padding-top: 30px
+	&--product
+		padding-top: 150px
+		+media(sm)
+			padding-top: 100px
+		.section--actions
+			display: flex
+			+media(xl)
+				flex-direction: column
+			.button
+				margin-right: 20px
+				+media(xl)
+					margin-bottom: 20px
+	&--popular-container
+		position: relative
+	&--sizes
+		+media(sm)
+			justify-content: center
+		.link--icon
+			margin-right: 40px
+			+media(sm)
+				&:last-of-type
+					margin-right: 0
+	&--price
+		font-size: 48px
+		font-weight: 300
+		margin-top: 30px
+		margin-bottom: 30px
+		+media(sm)
+			font-size: 36px
+	&--order
+		padding-top: 30px
+		.form--card
+			color: #c4c4c4
+			.link--icon
+				border-color: #c4c4c4
+				color: #c4c4c4
+		.form--card-active
+			color: #4e4e4e
+			.link--icon
+				border-color: #4e4e4e
+				color: #4e4e4e
+	&--item-address
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		.link
+			margin:
+				right: 0
+				left: 0
+			bottom: 10px
+	&--popular
+		.swiper-slide
+			display: grid
+			height: auto
+		.swiper-button-nav
+			height: 40px !important
+			width: 40px !important
+			svg
+				height: 20px
+			+media(md)
+				display: none
+	&--delivery
+		.section--block
+			width: 50%
+			+media(md)
+				width: 100%
+		.section--blocks
+			padding-bottom: 120px
+			+media(md)
+				flex-direction: column
+				padding-bottom: 100px
+			&:nth-child(odd)
+				.section--block
+					&:nth-child(1)
+						padding-right: 120px
+						+media(lg)
+							padding-right: 70px
+						+media(md)
+							padding-right: 0
+			&:nth-child(even)
+				.section--block
+					&:nth-child(1)
+						padding-left: 120px
+						+media(lg)
+							padding-left: 70px
+						+media(md)
+							padding-left: 0
+	&--pluses
+		overflow: hidden
+		.section--title
+			margin-bottom: 180px
+			+media(sm)
+				margin-bottom: 90px
+		.section--slider
+			width: 185%
+			height: 100%
+			// display: flex
+			// align-items: center
+			// justify-content: center
+			+media(md)
+				width: 100%
+				padding:
+					left: 20px
+					right: 20px
+			+media(sm)
+				padding:
+					left: 15px
+					right: 15px
+				height: 325px
+			.swiper-container
+				// height: 100%
+			&-wrapper
+				display: flex
+				// align-items: center
+				justify-content: center
+				width: 100%
+				// overflow: hidden
+				position: relative
+		.item
+			width: 100%
+			height: 100%
+			transition: transform 1s $cubic
+			overflow: hidden
+			&--image
+				height: 100%
+				+media(sm)
+					img
+						height: 100%
+						width: auto
+			&--content
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				width: 100%
+				height: 100%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				box-sizing: border-box
+				padding:
+					left: 60px
+					right: 60px
+				+media(sm)
+					padding:
+						left: 20px
+						right: 20px
+		&-background-text
+			position: absolute
+			left: 0
+			background-image: url('../../static/images/section-pluses-text.svg')
+			background-repeat: repeat-x
+			width: 100%
+			height: 200px
+			background-size: cover
+			&_top
+				top: 0
+				transform: translateY(-50%)
+			&_bottom
+				bottom: 0
+				transform: translateY(50%)
+				+media(md)
+					height: 100px
+		.swiper-slide-next, .swiper-slide-prev
+			.item
+				transform: scale(0.8)
+
+		.item--title
+			font-size: 36px
+			line-height: 45px
+			font-weight: normal
+			margin-bottom: 20px
+			margin-top: 0
+			+media(md)
+				font-size: 30px
+				line-height: 30px
+			+media(sm)
+				font-size: 24px
+				line-height: 30px
+
+		.swiper-button-prev
+			left: 32%!important
+		.swiper-button-next
+			right: 32%!important
+		.swiper-button-prev, .swiper-button-next
+			+media(md)
+				display: none
+
+	&--about
+		.section--block
+			width: 50%
+		.section--block-content
+			padding-right: 80px
+			margin-bottom: 0
+	&--advantages
+		padding-top: 0
+		padding-bottom: 0
+
+	&--blueberry
+		display: flex
+		align-items: center
+		margin-bottom: 25px
+		&-checkbox
+			margin-right: 15px
+			cursor: pointer
+			width: 16px
+			height: 16px
+			border-radius: 0
+			outline: none
+		&-text
+			font-size: 16px
+			line-height: 20px
+			color: #4E4E4E
+			margin-right: 10px
+			+media(sm)
+				font-size: 12px
+		&-label
+			position: relative
+			display: inline-block
+			width: 20px
+			height: 20px
+			border: 1px solid
+			box-sizing: border-box
+			margin-right: 10px
+			&::before
+				content: ""
+				position: absolute
+				left: 50%
+				top: 50%
+				width: 15px
+				height: 15px
+				background-color: transparent
+				transform: translate(-50%, -50%)
+				transition: background-color 1s
+				transition-timing-function: cubic-bezier(0.35, 0, 0, 1.01)
+				cursor: pointer
+			&_active
+				border-color: $brand-color
+				&::before
+					background-color: $brand-color
+.section--about.reverse
+	.section--blocks
+		flex-direction: row-reverse
+	.section--block-content
+		padding-right: 0
+		padding-left: 80px
+
+.section--about, .section--about.reverse
+	.section--block
+		width: 100%
+	.section--blocks
+		+media(md)
+			flex-direction: column
+	.section--block-content
+		+media(md)
+			padding-left: 0
+			padding-right: 0
+			margin-bottom: 80px
+
+.section--products, .section--catalog, .section--product-page
+	+media(sm)
+		.grid--sm-2
+			grid-template-columns: repeat(2, 48%)
+			.item--product-title
+				padding-right: 10px
+				padding-left: 10px
+
+#section--info
+	.item--image
+		img
+			max-height: 460px
+			height: 100%
+			object-fit: cover
+			+media(xl)
+				max-height: 406px
+			+media(lg)
+				max-height: 294px
+			+media(md)
+				max-height: 500px
+			+media(sm)
+				max-height: 300px
+.section--loyalty-system
+	height: 100vh
+	display: flex
+	align-items: center
+	background-image: url('/images/loyalty-system-bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+
+// Popular slider on mobile devices
+.section--popular
+	+media(sm)
+		.swiper-slide
+			.item--product
+				width: 90%
+				transform: translateX(-20px)
+				transition: all 0.25s linear
+				&:last-of-type
+					.item--product
+						width: 100%
+			.swiper-slide-active
+				.item--product
+					width: 90%
+					transform: translateX(0)
+
+// Pluses slider on mobile devices
+
+.section--pluses
+	+media(sm)
+		.section--slider
+			padding-right: 0
+			.swiper-slide
+				.item
+					width: 90%
+					transform: translateX(-40px)
+					transition: all 0.25s linear
+			.swiper-slide-active
+				.item
+					width: 90%
+					transform: translateX(0)

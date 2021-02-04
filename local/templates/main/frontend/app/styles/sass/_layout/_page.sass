@@ -1,0 +1,29 @@
+.page
+	width: 100%
+	padding: 0
+	margin: 0
+	&--checkout
+		// text-align: center
+	&--404
+		// text-align: center
+		.section--full-screen
+			background-image: url('../../static/images/404-text.svg')
+			background-repeat: repeat-x
+			background-position-y: center
+	&--about
+		.title
+			margin-bottom: 0
+
+.important-date
+	.button
+		max-width: 300px
+
+.page-enter-active, .page-leave-active
+	transition: opacity 1s
+	transition-timing-function: cubic-bezier(.35,0,0,1.01)
+
+.page-enter, .page-leave-active
+	opacity: 0
+
+.unscroll
+	overflow: hidden

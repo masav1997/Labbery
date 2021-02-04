@@ -1,0 +1,55 @@
+.info-delivery-product
+  display: flex
+  padding-top: 50px
+  padding-bottom: 50px
+  border:
+    top: 1px solid #E1E1E1
+    bottom: 1px solid #E1E1E1
+  position: relative
+  &::before
+    content: ''
+    display: block
+    height: 100%
+    width: 1px
+    background-color: #E1E1E1
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+    +media(lg)
+      display: none
+  +media(md)
+    flex-wrap: wrap
+  &--inner
+    padding-left: 50px
+    padding-right: 50px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:nth-child(2)
+      padding-right: 30px
+    +media(lg)
+      &:nth-child(1)
+        padding-left: 0
+      &:nth-child(2)
+        padding-right: 0
+    +media(md)
+      &:nth-child(1)
+        margin-bottom: 70px
+      &:nth-child(2)
+        padding-left: 0
+      
+
+  &--item
+    &-title
+      font-size: 24px
+      line-height: 30px
+      font-weight: 500
+      color: #4E4E4E
+      margin-top: 0
+      margin-bottom: 40px
+    &-text
+      font-size: 16px
+      line-height: 150%
+    &:nth-child(1)
+      margin-bottom: 70px

@@ -1,0 +1,30 @@
+.select
+  @extend %input
+  position: relative
+  padding:
+    left: 20px
+    right: 20px
+  &--appearance
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 20px
+    margin:
+      top: auto
+      bottom: auto
+    width: 15px
+    height: 10px
+    pointer-events: none
+    display: flex
+    align-items: center
+    svg
+      width: 100%
+
+select
+  background-color: transparent
+  border: none
+  appearance: none
+  width: 100%
+  height: 100%
+  outline: none

@@ -1,0 +1,40 @@
+.product-gallery
+  overflow: hidden
+  position: relative
+  .item--image
+    img
+      max-width: 500px
+      max-height: 450px
+      object-fit: cover
+      width: 100%
+      height: 100%
+  .swiper-button-prev
+    left: 20px!important
+  .swiper-button-next
+    right: 20px!important
+  &--wrapper
+    overflow: hidden
+    .product-thumbs
+      display: flex
+      margin-top: 20px
+      cursor: pointer
+      &--item
+        width: 66px
+        height: 66px
+        padding: 6px
+        border: 1px solid #F0F0F0
+        border-radius: 3px
+        margin-right: 20px
+        +media(xl)
+          margin-right: 14px
+        +media(lg)
+          width: 47px
+          height: 47px
+        &_active
+          border: 1px solid #d7607f
+        &:last-of-type
+          margin-right: 0
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover

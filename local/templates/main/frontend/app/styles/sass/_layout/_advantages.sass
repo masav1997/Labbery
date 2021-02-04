@@ -1,0 +1,32 @@
+.advantages
+  display: flex
+  justify-content: space-between
+  margin-bottom: 40px
+  +media(lg)
+    flex-wrap: wrap
+  &--item
+    text-align: center
+    +media(lg)
+      width: 50%
+      &:nth-child(1)
+        margin-bottom: 30px
+      &:nth-child(2)
+        margin-bottom: 30px
+    +media(sm)
+      width: 48%
+      margin-bottom: 30px
+      &:last-of-type
+        margin-bottom: 0
+    &-icon
+      margin-bottom: 20px
+    &-title
+      font-size: 18px
+      font-weight: 500
+      margin-top: 0
+      margin-bottom: 15px
+    &-text
+      font-size: 12px
+      line-height: 150%
+  &--button-review
+    color: $brand-color !important
+    max-width: 260px !important

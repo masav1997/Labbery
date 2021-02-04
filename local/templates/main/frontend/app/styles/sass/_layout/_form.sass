@@ -1,0 +1,105 @@
+.form
+	&--card
+		border: 1px solid #c4c4c4 !important
+		width: 100%
+		padding: 30px
+		padding-bottom: 0
+		+media(lg)
+			padding:
+				top: 15px
+				right: 15px
+				left: 15px
+		&-active
+			border: 1px solid #818181 !important
+			.form--card-content
+				max-height: 560px
+		&-header
+			margin-bottom: 30px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			+media(lg)
+				margin-bottom: 15px
+			&_inner
+				display: flex
+				align-items: center
+			.link--icon
+				margin-right: 30px
+				+media(sm)
+					margin-right: 15px
+		&-content
+			width: 100%
+			max-height: 0
+			overflow: hidden
+			transition: max-height 1s
+			transition-timing-function: cubic-bezier(.35,0,0,1.01)
+			&_alternate
+				overflow: hidden
+				max-height: 0
+				transition: max-height 1s
+				transition-timing-function: cubic-bezier(.35,0,0,1.01)
+				&_active
+					max-height: 200px
+				div
+					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 30px
+						+media(lg)
+							margin-bottom: 15px
+		&-title
+			font-size: 24px
+			line-height: 30px
+			letter-spacing: 0.03em
+			margin:
+				top: 0
+				bottom: 0
+			+media(sm)
+				font-size: 16px
+
+		.button
+			max-width: 100%
+			margin-bottom: 30px
+			+media(lg)
+				margin-bottom: 15px
+	&--label
+		font-size: 12px
+		text-transform: uppercase
+		cursor: pointer
+	&--group
+		display: flex
+		width: 100%
+		.input--wrapper
+			&:first-child
+				padding-right: 10px
+			&:last-child
+				padding-left: 10px
+
+	&--auth
+		max-width: 400px
+		width: 100%
+		.form--card
+			padding-bottom: 10px
+		.link
+			margin-right: 0
+			margin-left: 0
+		.button
+			margin:
+				bottom: 10px
+	&--login
+		.form--card
+			padding-bottom: 10px
+		.link
+			margin:
+				right: 0
+				left: 0
+		.button
+			margin:
+				bottom: 10px
+
+	&--profile
+		max-width: 400px
+		width: 100%
+		.form
+			&--card
+				padding: 0
+				border: none
