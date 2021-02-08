@@ -27,22 +27,20 @@
 	@media screen and (max-width: 768px) 
 		font-size: 16px
 
-.images-block 
-	width: 600px
+.images-block
 	display: flex
-	justify-content: space-between
+	justify-content: center
+	gap: 20px
 	margin-bottom: 25px
-	@media screen and (max-width: 768px) 
-		width: 100%
-		justify-content: center
-		gap: 20px
 
-.images-block__photo
-	background-image: url('../../images/content/news-image2.png')
+.images-block .item--image
+	width: auto
+
+.images-block .item--image img
 	width: 287px
 	height: 377px
-	background-size: 100%
-	background-repeat: no-repeat
+	object-fit: cover
+		overflow: hidden
 	@media screen and (max-width: 768px) 
 		width: 200px
 		height: 260px
