@@ -1,7 +1,7 @@
 <% const data = {
     'title': 'Новости',
     'flowContainerClass' : 'flow-container--main',
-    'tag': 'yes'
+    'tag': 'false'
 } %>
 
 <%- require("../layouts/header.ejs")(data) %>
@@ -9,12 +9,6 @@
         <div class="container">
             <section class="news-list-header">
                 <h2 class="news-list-header__title">Новости</h2>
-                <ul class="news-list-header__navigation">
-                    <li><a class="news-list-header__link active" href="#">Все новости</a></li>
-                    <li><a class="news-list-header__link" href="#">Лайфхаки</a></li>
-                    <li><a class="news-list-header__link" href="#">Видео</a></li>
-                    <li><a class="news-list-header__link" href="#">Статьи</a></li>
-                </ul>
             </section>
             <section class="news__list grid--xl-3 grid--md-2 grid--sm-1">
                 <% const list = [
@@ -25,6 +19,8 @@
                     <%- require("../section/news-card.ejs")(data) %>
                 <% }) %>
             </section>
+            <%- require("../section/news-video.ejs")() %>
+            <%- require("../section/news-slider.ejs")() %>
         </div>
     </main>
 <%- require("../layouts/footer.ejs")() %>

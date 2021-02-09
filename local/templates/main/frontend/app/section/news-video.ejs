@@ -1,0 +1,12 @@
+<section class="news-list-videos">
+    <h2 class="news-list-header__title">Видео</h2>
+    <div class="news__list grid--xl-3 grid--md-2 grid--sm-1">
+        <% const videoList = [
+            {}, {}, {}
+        ] %>
+
+        <% videoList.forEach(function (item) { %>
+            <%- require("./news-video-item.ejs")() %>
+        <% }) %>
+    </div>
+</section>

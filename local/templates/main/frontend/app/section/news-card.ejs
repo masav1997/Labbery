@@ -1,0 +1,18 @@
+<div class="news-card">
+    <div class="item--image">
+        <img src="../../../images/content/news-image1.png" alt="Искусственный свадебный букет невесты - альтернатива живым цветам">
+    </div>
+    <div class="news-card__date">
+        <p class="news-card__date-value">27.03.2018</p>
+    </div>
+    <h3 class="news-card__title">
+        Искусственный свадебный букет невесты - альтернатива живым цветам
+    </h3>
+    <p class="news-card__description">
+        Букет как искусство. Роскошные презенты. Креативные варианты букета. Правила преподнесения презента...
+        <a href="#">Читать далее</a>
+    </p>
+    <% if(tag=='yes') { %>
+        <%- require("./news-card-tag.ejs")() %>
+    <% } %>
+</div>

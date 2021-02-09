@@ -1,0 +1,20 @@
+<section id="sliderNews">
+    <div class="slider-header">
+        <h2 class="slider-header__title">Лайфхаки</h2>
+        <div class="slider-header__buttons">
+            <div class="swiper-btn-next"></div>
+            <div class="swiper-btn-prev"></div>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <% const sliderList = [
+                {}, {}, {}
+            ] %>
+
+            <% sliderList.forEach(function (item) { %>
+                <%- require("./news-slider-item.ejs")() %>
+            <% }) %>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,110 @@
+#sliderNews
+	height: max-content
+	margin-bottom: 100px
+
+.slider-header
+	display: flex
+	justify-content: space-between
+
+.slider-header__title
+	font-style: normal
+	font-weight: 300
+	font-size: 36px
+	line-height: 45px
+	text-align: left
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	margin-bottom: 35px
+
+.swiper-slide
+	width: 817px
+	height: 313px
+
+.swiper-slide img
+	height: 100%
+	width: 100%
+	object-fit: cover
+	overflow: hidden
+
+.swiper-slide img:hover
+	opacity: 0.6
+
+.swiper-slide img:focus
+	opacity: 0.3
+
+.slider-header__buttons
+	position: relative
+	display: flex
+	align-items: center
+
+.swiper-btn-prev:hover
+	opacity: 0.6
+
+.swiper-btn-prev:active
+	opacity: 0.3
+
+.swiper-btn-next
+	width: 36px !important
+	height: 36px !important
+	background: url("data:image/svg+xml,%3Csvg width='13' height='38' viewBox='0 0 13 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 1L1 19.5L12 37' stroke='%23818181' stroke-width='1.5'/%3E%3C/svg%3E%0A") no-repeat center
+	border: none
+	outline: none
+	cursor: pointer
+
+.swiper-btn-next:hover
+	opacity: 0.6
+
+.swiper-btn-next:active
+	opacity: 0.3
+
+.swiper-btn-prev
+	width: 36px !important
+	height: 36px !important
+	background: url("data:image/svg+xml,%3Csvg width='13' height='38' viewBox='0 0 13 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L12 19.5L1 37' stroke='%23D7607F' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat center
+	border: none
+	outline: none
+	cursor: pointer
+
+.swiper-slide__content
+	position: absolute
+	bottom: 43px
+	padding: 0 45px
+	@media screen and (max-width: 992px)
+		bottom: 23px
+		padding: 0 25px
+
+.swiper-slide__title
+	font-style: normal
+	font-weight: 500
+	font-size: 24px
+	line-height: 30px
+	color: #FFFFFF
+	margin-bottom: 10px
+	cursor: pointer
+	@media screen and (max-width: 992px)
+		font-size: 20px
+
+.swiper-slide__title:hover
+	opacity: 0.6
+
+.swiper-slide__title:active
+	opacity: 0.3
+
+.swiper-slide__description
+	font-weight: normal
+	font-size: 16px
+	line-height: 130%
+	letter-spacing: 0.03em
+	color: rgba(255, 255, 255, 0.7)
+	@media screen and (max-width: 992px)
+		font-size: 14px
+
+.swiper-slide__description a
+	color: #D7607F
+	cursor: pointer
+
+.swiper-slide__description a:hover
+	opacity: 0.6
+
+.swiper-slide__description a:active
+	opacity: 0.3

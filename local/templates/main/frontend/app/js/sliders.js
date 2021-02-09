@@ -111,6 +111,39 @@ export default class Sliders {
             }
         ];
 
+        this.SliderNews = [
+            {
+                'selector': '#sliderNews .swiper-container',
+                'options': {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    slidesPerGroup: 1,
+                    speed: 700,
+                    loop: true,
+                    pagination: {
+                        el: '#sliderNews .swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '#sliderNews .swiper-btn-prev',
+                        prevEl: '#sliderNews .swiper-btn-next',
+                    },
+                    breakpoints: {
+                        800: {
+                            slidesPerView: 1.5,
+                            slidesPerGroup: 1.5,
+                            spaceBetween: 30
+                        },
+                        1200: {
+                            slidesPerView: 1.5,
+                            slidesPerGroup: 1.5,
+                            spaceBetween: 30
+                        },
+                    }
+                }
+            }
+        ];
+
         this.init();
     }
 
@@ -133,6 +166,15 @@ export default class Sliders {
         });
 
         this.SliderPluses.forEach(function (slider) {
+            new Slider(slider.selector, slider.options)
+            /*if ($(slider.selector).find($('.swiper-slide')).length > 4) {
+                new Slider(slider.selector, slider.options)
+            } else {
+                $(slider.selector).closest('.slider-catalog').find('.slider-catalog__head').addClass('slider-catalog__head--nav-hide');
+            }*/
+        });
+
+        this.SliderNews.forEach(function (slider) {
             new Slider(slider.selector, slider.options)
             /*if ($(slider.selector).find($('.swiper-slide')).length > 4) {
                 new Slider(slider.selector, slider.options)
