@@ -1,0 +1,12 @@
+<% const data = {
+    'tag': 'yes'
+} %>
+<section class="news__list grid--xl-3 grid--md-2 grid--sm-1">
+    <% const list = [
+        {}, {}, {}, {}, {}, {}
+    ] %>
+
+    <% list.forEach(function (item) { %>
+        <%- require("../section/news-card.ejs")(data) %>
+    <% }) %>
+</section>

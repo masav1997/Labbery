@@ -1,0 +1,14 @@
+<section class="article-content">
+    <div class="container">
+        <% if(image=='yes') { %>
+            <%- require("../components/elements/news-page-image-main.ejs")() %>
+        <% } else { %>
+                <%- require("../components/elements/news-page-video-main.ejs")() %>
+            <% } %>
+        <%- require("../components/elements/news-page-quote.ejs")() %>
+        <%- require("../components/elements/news-page-main-text.ejs")() %>
+        <%- require("../components/elements/news-page-article.ejs")() %>
+        <%- require("../components/elements/news-page-article-img.ejs")() %>
+        <%- require("../components/elements/news-page-article.ejs")() %>
+    </div>
+</section>

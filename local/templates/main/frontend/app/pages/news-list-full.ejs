@@ -1,24 +1,15 @@
 <% const data = {
     'title': 'Новости',
     'flowContainerClass' : 'flow-container--main',
-    'tag': 'false'
+    'tag': 'false',
+    'isNavigation': 'no'
 } %>
 
 <%- require("../layouts/header.ejs")(data) %>
     <main>
         <div class="container">
-            <section class="news-list-header">
-                <h2 class="news-list-header__title">Новости</h2>
-            </section>
-            <section class="news__list grid--xl-3 grid--md-2 grid--sm-1">
-                <% const list = [
-                    {}, {}, {}, {}, {}, {}
-                ] %>
-
-                <% list.forEach(function (item) { %>
-                    <%- require("../section/news-card.ejs")(data) %>
-                <% }) %>
-            </section>
+            <%- require("../section/news-list-header.ejs")(data) %>
+            <%- require("../section/news-list-main.ejs")() %>
             <%- require("../section/news-video.ejs")() %>
             <%- require("../section/news-slider.ejs")() %>
         </div>
