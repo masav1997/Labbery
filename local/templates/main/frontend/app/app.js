@@ -1,3 +1,5 @@
+import NewsTabs from "./js/news-tab";
+
 if(window.location.hash) window.setTimeout(() => { window.scrollTo(0, 0); }, 1);
 
 function requireAll(r) {
@@ -70,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     App.Sliders = new Sliders();
     App.Search = new Search();
     App.Debounce = new Debounce();
+    App.NewsTabs = new NewsTabs();
     // App.Map = new Map();
     // App.Video = new Video();
     // App.Scrollbar = new Scrollbar();

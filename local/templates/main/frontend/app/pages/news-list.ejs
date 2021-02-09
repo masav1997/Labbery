@@ -1,14 +1,15 @@
 <% const data = {
     'title': 'Новости',
     'flowContainerClass' : 'flow-container--main',
-    'isNavigation': 'yes'
-} %>
+    'isNavigation': 'yes',
+    'tag': 'yes'
+}%>
 
 <%- require("../layouts/header.ejs")(data) %>
     <main>
         <div class="container">
             <%- require("../section/news-list-header.ejs")(data) %>
-            <%- require("../section/news-list-main.ejs")() %>
+            <%- require("../section/news-list-main.ejs")(data) %>
         </div>
     </main>
 <%- require("../layouts/footer.ejs")() %>

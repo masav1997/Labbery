@@ -1,12 +1,28 @@
-<div class="swiper-slide">
-    <img src="../../../images/content/news-image1.png" alt="Искусственный свадебный букет невесты - альтернатива живым цветам">
-    <div class="swiper-slide__content">
-        <h3 class="swiper-slide__title">
-            Искусственный свадебный букет невесты - альтернатива живым цветам
-        </h3>
-        <p class="swiper-slide__description">
-            Букет как искусство. Роскошные презенты. Креативные варианты букета. Правила преподнесения презента...
-            <a href="#">Читать далее</a>
-        </p>
+<% const thumbs = [
+    {
+        img: 'news-image1.png',
+        title: 'Оформление букета из тюльпанов'
+    },
+    {
+        img: 'news-image2.png',
+        title: 'Оформление букета из роз'
+    },
+    {
+        img: 'news-image1.png',
+        title: 'Какие цветы любят мужчины'
+    }
+] %>
+<% thumbs.forEach(function (item) { %>
+    <div class="swiper-slide">
+        <img src="../../../images/content/<%= item.img %>" alt="Искусственный свадебный букет невесты - альтернатива живым цветам">
+        <div class="swiper-slide__content">
+            <h3 class="swiper-slide__title">
+                <%= item.title %>
+            </h3>
+            <p class="swiper-slide__description">
+                Букет как искусство. Роскошные презенты. Креативные варианты букета. Правила преподнесения презента...
+                <a href="#">Читать далее</a>
+            </p>
+        </div>
     </div>
-</div>
+<% }) %>
